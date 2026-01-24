@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static\styles.css">
+  <title>PROYECTO: anti-deforestación</title>
+</head>
+
+<body>
+
+<header>
+  <img src="https://www.ecured.cu/images/8/81/Bosque00.jpg" width="200" height="200">
+  <h1>Bienvenido al proyecto anti-deforestación</h1>
+
+  <div class="nav-links">
+    <a href="/hola"><button>lluvia de ideas</button></a>
+    <a href="/informacion"><button>informacion</button></a>
+    <a href="/lluvia"><button>lluvia de ideas</button></a>
+
+  </div>
+</header>
+
+<div class="container">
+  <h1>Lluvia de ideas</h1>
+
+  <h3>En esta seccion responderas a la pregunta ¿como puedo <strong>ayudar/aportar</strong> a detener la tala de arboles en mi ciudad? y podras ver las respuestar del resto de personas</h3>
+
+  <form method="POST">
+    <input type="text" name="idea" placeholder="Escribe tu idea" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  {% for idea in ideas %}
+    <div class="idea">{{ idea[1] }}</div>
+  {% endfor %}
+</div>
+
+</body>
+</html>

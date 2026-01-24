@@ -1,0 +1,124 @@
+body {
+    font-family:Arial,sans-serif;
+    line-height:1.7;
+    background-color: #FFFFFF ;
+    color: rgb(126, 253, 185);
+}
+
+header {
+    background-color:#bdffba;
+    color:white;
+    text-align:center;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}   
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.nav-links button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    background-color: #439526;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.info-card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;      /* vertical */
+    align-items: center;         /* centra horizontalmente */
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.info-card h3 {
+    margin: 10px 0 8px;
+    color: #2d7a3e;
+}
+
+.info-card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(255,110,0,0.35);
+}
+
+.info-card img {
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    margin-bottom: 5px;
+    color: #eeec53;
+}
+
+.deforestacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.texto {
+    max-width: 500px;
+    text-align: center;
+}
+
+.deforestacion img {
+    width: 180px;
+}
+
+
+.texto h3 {
+    margin-bottom: 10px;
+    color: #14490c;
+}
+
+.texto p {
+    line-height: 1.6;
+    color: #14490c;
+}
